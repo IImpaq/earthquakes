@@ -1,9 +1,9 @@
-//
-//  EarthquakesApp.swift
-//  Earthquakes
-//
-//  Created by Marcus Gugacs on 25.09.23.
-//
+/*
+See 3RD-PARTY-LICENSES file for this sample’s licensing information.
+
+Abstract:
+The app and main window group scene.
+*/
 
 import SwiftUI
 
@@ -11,7 +11,7 @@ import SwiftUI
 struct EarthquakesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Quakes()
         }
     }
 }
