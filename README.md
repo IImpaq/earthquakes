@@ -27,7 +27,7 @@ Files provided through the tutorial starter project have a corresponding license
 
 ## Acknowledgments
 Some of the files/samples are provided as part of the starter project by Apple Inc.
-The gelogical data is proveded by the U.S. Geological Survey (USGS).
+The geological data is provided by the U.S. Geological Survey (USGS).
 The tutorial can be found [here](https://developer.apple.com/tutorials/app-dev-training)
 
 ## Contact
