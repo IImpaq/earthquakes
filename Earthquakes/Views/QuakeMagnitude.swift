@@ -25,6 +25,7 @@ struct QuakeMagnitude: View {
 
 struct QuakeMagnitude_Previews: PreviewProvider {
     static var previewQuake = Quake(magnitude: 1.0,
+                                    tsunami: 0,
                                     place: "Shakey Acres",
                                     time: Date(timeIntervalSinceNow: -1000),
                                     code: "nc73649170",
