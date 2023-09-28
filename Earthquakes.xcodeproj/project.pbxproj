@@ -28,9 +28,13 @@
 		2C0670D62AC1BB28006C77B5 /* ACKNOWLEDGMENTS in Resources */ = {isa = PBXBuildFile; fileRef = 2C0670D52AC1BB28006C77B5 /* ACKNOWLEDGMENTS */; };
 		2C0670D82AC1BEF0006C77B5 /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0670D72AC1BEF0006C77B5 /* QuakeError.swift */; };
 		2C0670E02AC1C003006C77B5 /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0670DF2AC1C003006C77B5 /* EarthquakesTests.swift */; };
-		2C0670E72AC1C05B006C77B5 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0670E62AC1C05B006C77B5 /* TestData.swift */; };
 		2CA304392AC58311007FDFD0 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA304382AC58311007FDFD0 /* GeoJSON.swift */; };
 		2CA3043B2AC5B027007FDFD0 /* QuakeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3043A2AC5B026007FDFD0 /* QuakeLocation.swift */; };
+		2CA3043D2AC5B46B007FDFD0 /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3043C2AC5B46B007FDFD0 /* HTTPDataDownloader.swift */; };
+		2CA3043F2AC5B510007FDFD0 /* QuakeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA3043E2AC5B510007FDFD0 /* QuakeClient.swift */; };
+		2CA304402AC5B5C1007FDFD0 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0670E62AC1C05B006C77B5 /* TestData.swift */; };
+		2CA304422AC5B5D7007FDFD0 /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA304412AC5B5D7007FDFD0 /* TestDownloader.swift */; };
+		2CA304442AC5B7E4007FDFD0 /* QuakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA304432AC5B7E4007FDFD0 /* QuakesProvider.swift */; };
 		2CB92C5E2AC1B84B00181D9E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2CB92C5B2AC1B84B00181D9E /* README.md */; };
 		2CB92C5F2AC1B84B00181D9E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2CB92C5C2AC1B84B00181D9E /* LICENSE */; };
 		2CB92C602AC1B84B00181D9E /* 3RD-PARTY-LICENSES in Resources */ = {isa = PBXBuildFile; fileRef = 2CB92C5D2AC1B84B00181D9E /* 3RD-PARTY-LICENSES */; };
@@ -72,6 +76,10 @@
 		2C0670E62AC1C05B006C77B5 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		2CA304382AC58311007FDFD0 /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
 		2CA3043A2AC5B026007FDFD0 /* QuakeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeLocation.swift; sourceTree = "<group>"; };
+		2CA3043C2AC5B46B007FDFD0 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
+		2CA3043E2AC5B510007FDFD0 /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
+		2CA304412AC5B5D7007FDFD0 /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
+		2CA304432AC5B7E4007FDFD0 /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
 		2CB92C4A2AC1B79400181D9E /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB92C5B2AC1B84B00181D9E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2CB92C5C2AC1B84B00181D9E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -124,6 +132,9 @@
 				2C0670D72AC1BEF0006C77B5 /* QuakeError.swift */,
 				2CA304382AC58311007FDFD0 /* GeoJSON.swift */,
 				2CA3043A2AC5B026007FDFD0 /* QuakeLocation.swift */,
+				2CA3043C2AC5B46B007FDFD0 /* HTTPDataDownloader.swift */,
+				2CA3043E2AC5B510007FDFD0 /* QuakeClient.swift */,
+				2CA304432AC5B7E4007FDFD0 /* QuakesProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,7 +142,9 @@
 		2C0670AF2AC1BABF006C77B5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2C0670E62AC1C05B006C77B5 /* TestData.swift */,
 				2C0670B02AC1BABF006C77B5 /* Preview Assets.xcassets */,
+				2CA304412AC5B5D7007FDFD0 /* TestDownloader.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -182,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				2C0670DF2AC1C003006C77B5 /* EarthquakesTests.swift */,
-				2C0670E62AC1C05B006C77B5 /* TestData.swift */,
 			);
 			path = EarthquakesTests;
 			sourceTree = "<group>";
@@ -320,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0670E02AC1C003006C77B5 /* EarthquakesTests.swift in Sources */,
-				2C0670E72AC1C05B006C77B5 /* TestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,12 +347,17 @@
 				2C0670C62AC1BABF006C77B5 /* Quake+Color.swift in Sources */,
 				2C0670D02AC1BABF006C77B5 /* ToolbarStatus.swift in Sources */,
 				2C0670C52AC1BABF006C77B5 /* Quake.swift in Sources */,
+				2CA304442AC5B7E4007FDFD0 /* QuakesProvider.swift in Sources */,
 				2C0670C92AC1BABF006C77B5 /* QuakeRow.swift in Sources */,
+				2CA304402AC5B5C1007FDFD0 /* TestData.swift in Sources */,
 				2C0670CB2AC1BABF006C77B5 /* EditButton.swift in Sources */,
 				2C0670D82AC1BEF0006C77B5 /* QuakeError.swift in Sources */,
 				2CA3043B2AC5B027007FDFD0 /* QuakeLocation.swift in Sources */,
+				2CA3043D2AC5B46B007FDFD0 /* HTTPDataDownloader.swift in Sources */,
 				2C0670CD2AC1BABF006C77B5 /* RefreshButton.swift in Sources */,
+				2CA3043F2AC5B510007FDFD0 /* QuakeClient.swift in Sources */,
 				2C0670CA2AC1BABF006C77B5 /* Quakes.swift in Sources */,
+				2CA304422AC5B5D7007FDFD0 /* TestDownloader.swift in Sources */,
 				2C0670CF2AC1BABF006C77B5 /* Quakes+Toolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
